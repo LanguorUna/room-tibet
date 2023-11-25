@@ -1,0 +1,48 @@
+@import "../constants";
+
+.info {
+  background-image: url("src/assets/info.png");
+  color: var(--colorInfo);
+
+  &__slogan {
+    font-family: "NEXT ART_Bold", sans-serif;
+    font-size: 50px;
+    max-width: 1080px;
+
+    line-height: 75px;
+    letter-spacing: 1px;
+
+    @media (max-width: @md) {
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 412px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &-container {
+      margin-top: 468px;
+      margin-bottom: 40px;
+
+      @media (max-width: @lg) {
+        margin-top: 234px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+.select {
+  appearance: none;
+  background-image: url("src/assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+
+  &_dates {
+    background-image: url("src/assets/date.svg");
+    background-size: 18px 18px;
+  }
+}

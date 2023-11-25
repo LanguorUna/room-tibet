@@ -1,0 +1,44 @@
+@import "../constants";
+
+.popular {
+  background-color: var(--colorInfo);
+
+  &__cards-wrapper {
+    width: -webkit-fill-available;
+    scroll-behavior: smooth;
+  }
+
+
+  &__card {
+    border-radius: 32px;
+    color: var(--colorInfo);
+
+    &-rating {
+      border-radius: 4px 0 0 4px;
+      color: var(--colorAccent);
+    }
+
+    &-content {
+      transition: height 0.3s;
+    }
+
+    &:hover &-content {
+      height: inherit;
+      margin-top: 30px;
+    }
+
+    &:hover &-rating {
+      display: none;
+    }
+  }
+}
+
+.popular__card {
+  width: 380px;
+  height: 500px;
+
+  @media (max-width: @md) {
+    width: 285px;
+    height: 400px;
+  }
+}

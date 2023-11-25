@@ -1,0 +1,35 @@
+.button {
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: background-color 0.25s;
+
+  &_size {
+    &_m {
+      padding: 12px 24px;
+      font-weight: 600;
+    }
+
+    &_l {
+      padding: 16px 36px;
+      font-weight: 700;
+    }
+  }
+
+  &_color {
+    &_primary {
+      background: var(--colorAccent);
+      color: var(--colorInfo);
+
+      &:hover {
+        background: var(--colorInfo);
+        color: var(--colorAccent);
+        box-shadow: inset 0 0 0 1px var(--colorAccent);
+      }
+    }
+
+    &_secondary {
+      background: var(--colorInfo);
+      color: var(--colorAccent);
+    }
+  }
+}

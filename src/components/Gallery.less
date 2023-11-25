@@ -1,0 +1,43 @@
+@import "../constants";
+
+.gallery {
+  background-color: var(--colorInfo);
+
+  &__cards {
+    grid-auto-rows: 250px;
+
+    @media (max-width: @xl) {
+      grid-auto-columns: 280px;
+    }
+
+    &-wrapper {
+      width: -webkit-fill-available;
+      scroll-behavior: smooth;
+    }
+  }
+
+  &__card:hover {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(26, 62, 62, 0.30) 0%, rgba(26, 62, 62, 0.30) 100%);
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: url(src/assets/zoom.svg) 0 0 / cover no-repeat;
+      z-index: 100;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
