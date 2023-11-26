@@ -5,7 +5,7 @@ function Item({text, isNew}: {text: string, isNew?: boolean}) {
     return (
         <div className="flex gap-2.5">
             <img className="self-start py-1 px-0.5" src="src/assets/Group.svg" alt=""/>
-            <span className="text-sm whitespace-wrap hover:underline hover:text-amber-400">
+            <span className="text-sm whitespace-wrap hover:underline hover:text-amber-400 cursor-pointer">
                 {text}
             </span>
             {isNew && (
@@ -46,10 +46,10 @@ function Footer() {
                         двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
                     </span>
                     <div className="flex gap-6 font-bold text-sm mb-8 flex-wrap">
-                        <span className="underline">
+                        <span className="underline cursor-pointer">
                             info@domain.com
                         </span>
-                        <span className="underline">
+                        <span className="underline cursor-pointer">
                             +7 (123) 456-78-90
                         </span>
                     </div>
@@ -88,7 +88,7 @@ function Footer() {
                 <div>
                     ИП Константинопольский К.К., {new Date().getFullYear()}
                 </div>
-                <div className="underline">
+                <div className="underline cursor-pointer">
                     Политика обработки персональных данных
                 </div>
             </PageBlock>

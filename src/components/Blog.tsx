@@ -20,7 +20,7 @@ function BlogCard(props: ICardProps): ReactElement {
             <img src={props.img}
                  className="w-72 h-72 xl:w-60 xl:h-72 xl:rounded-md object-cover shrink-0"/>
             <div className="flex flex-col gap-6 px-4 pb-4 xl:py-4 xl:px-0 xl:w-3/6">
-                <span className="font-bold text-xl xl:text-2xl hover:underline hover:text-cyan-950">
+                <span className="font-bold text-xl xl:text-2xl hover:underline hover:text-cyan-950 cursor-pointer">
                     {props.caption}
                 </span>
                 <div className="grow">
@@ -29,10 +29,10 @@ function BlogCard(props: ICardProps): ReactElement {
                     </span>
                 </div>
                 <div className="flex justify-between text-sm font-bold">
-                    <span className="text-amber-400">
+                    <span className="text-amber-400 cursor-pointer">
                      {dateText}
                     </span>
-                    <span className="text-cyan-950">
+                    <span className="text-cyan-950 cursor-pointer">
                         читать статью
                     </span>
                 </div>
