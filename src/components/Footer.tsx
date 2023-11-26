@@ -4,7 +4,7 @@ import './Footer.less'
 function Item({text, isNew}: {text: string, isNew?: boolean}) {
     return (
         <div className="flex gap-2.5">
-            <img className="self-start py-1 px-0.5" src="src/assets/Group.svg" alt=""/>
+            <img className="self-start py-1 px-0.5" src="../assets/Group.svg" alt=""/>
             <span className="text-sm whitespace-wrap hover:underline hover:text-amber-400 cursor-pointer">
                 {text}
             </span>
@@ -54,10 +54,10 @@ function Footer() {
                         </span>
                     </div>
                     <div className="flex gap-4">
-                        <img className="cursor-pointer" src="src/assets/telegram.svg" alt=""/>
-                        <img className="cursor-pointer" src="src/assets/vk.svg" alt=""/>
-                        <img className="cursor-pointer" src="src/assets/pinterest.svg" alt=""/>
-                        <img className="cursor-pointer" src="src/assets/skype.svg" alt=""/>
+                        <img className="cursor-pointer" src="../assets/telegram.svg" alt=""/>
+                        <img className="cursor-pointer" src="../assets/vk.svg" alt=""/>
+                        <img className="cursor-pointer" src="../assets/pinterest.svg" alt=""/>
+                        <img className="cursor-pointer" src="../assets/skype.svg" alt=""/>
                     </div>
                 </div>
                 <div className="flex basis-0 grow-[3] flex-wrap gap-12 lg:gap-28 lg:flex-nowrap">

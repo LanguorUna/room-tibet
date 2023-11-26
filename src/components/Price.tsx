@@ -30,19 +30,19 @@ function ListItem(props: IListItemProps): ReactElement {
 
 function Price() {
     const items: IListItemProps[] = [{
-        icon: 'src/assets/icon1.svg',
+        icon: '../assets/icon1.svg',
         bgColor: 'bg-emerald-100',
         caption: 'Опытный гид',
         description: 'Для современного мира базовый вектор развития предполагает независимые способы реализации ' +
             'соответствующих условий активизации.'
     }, {
-        icon: 'src/assets/icon2.svg',
+        icon: '../assets/icon2.svg',
         bgColor: 'bg-indigo-100',
         caption: 'Безопасный поход',
         description: 'Для современного мира базовый вектор развития предполагает независимые способы реализации ' +
             'соответствующих условий активизации.'
     }, {
-        icon: 'src/assets/icon3.svg',
+        icon: '../assets/icon3.svg',
         bgColor: 'bg-amber-100',
         caption: 'Безопасный поход',
         description: 'Для современного мира базовый вектор развития предполагает независимые способы реализации ' +
@@ -72,10 +72,10 @@ function Price() {
                 </Button>
             </div>
             <div className="grid-cols-2 gap-2.5 shrink-0 self-center hidden md:grid order-last xl:order-first">
-                <img src="src/assets/img6.jfif" alt="" className="price__img_left w-60 h-60 object-cover"/>
-                <img src="src/assets/img5.jfif" alt="" className="price__img_right w-60 h-60 object-cover"/>
-                <img src="src/assets/img4.jfif" alt="" className="price__img_right w-60 h-60 object-cover"/>
-                <img src="src/assets/img3.jfif" alt="" className="price__img_left w-60 h-60 object-cover"/>
+                <img src="../assets/img6.jfif" alt="" className="price__img_left w-60 h-60 object-cover"/>
+                <img src="../assets/img5.jfif" alt="" className="price__img_right w-60 h-60 object-cover"/>
+                <img src="../assets/img4.jfif" alt="" className="price__img_right w-60 h-60 object-cover"/>
+                <img src="../assets/img3.jfif" alt="" className="price__img_left w-60 h-60 object-cover"/>
             </div>
         </PageBlock>
     )
