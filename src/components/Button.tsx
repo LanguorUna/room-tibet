@@ -1,4 +1,4 @@
-import {ReactElement} from 'react';
+import {PropsWithChildren, ReactElement} from 'react';
 import './Button.less'
 
 export type TButtonColor = 'primary' | 'secondary'
@@ -8,10 +8,9 @@ export interface IButtonProps {
     size?: TButtonSize;
     color?: TButtonColor;
     className?: string;
-    children?: ReactElement | ReactElement[];
 }
 
-function Button({size, color, className, children}: IButtonProps): ReactElement {
+function Button({size, color, className, children}: PropsWithChildren<IButtonProps>): ReactElement {
     return (
         <button className={`button button_color_${color} button_size_${size} ${className || ''}`}>
             {children}
