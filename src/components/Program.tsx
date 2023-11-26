@@ -8,10 +8,10 @@ function Program() {
                    contentClassName="py-12 xl:py-24 box-border flex justify-center gap-16 xl:gap-32 flex-wrap xl:flex-nowrap">
             <div className="program__cards shrink-0 relative top-0 left-0 order-last xl:order-first">
                 <img src="src/assets/img2.jfif" alt=""
-                     className="program__card hidden md:block absolute md:top-0 md:left-0 object-cover rounded-3xl"/>
+                     className="program__card hidden md:block absolute md:top-0 md:left-0 object-cover rounded-3xl cursor-pointer"/>
                 <img src="src/assets/img1.jfif" alt=""
-                     className="program__card absolute md:bottom-0 md:right-0 object-cover rounded-3xl"/>
-                <div className="program__play rounded-full bg-zinc-50/60 absolute flex justify-center items-center">
+                     className="program__card absolute md:bottom-0 md:right-0 object-cover rounded-3xl cursor-pointer"/>
+                <div className="program__play rounded-full bg-zinc-50/60 absolute flex justify-center items-center cursor-pointer">
                     <img src="src/assets/play.svg" className="w-6 h-6"/>
                 </div>
             </div>
