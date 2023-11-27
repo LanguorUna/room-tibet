@@ -4,22 +4,22 @@ import './Gallery.less'
 
 function Gallery() {
     const items = [{
-        img: '/assets/img14.jfif',
+        img: './assets/img14.jfif',
         isBig: true
     }, {
-        img: '/assets/img15.jfif',
+        img: './assets/img15.jfif',
         isBig: false
     }, {
-        img: '/assets/img16.jfif',
+        img: './assets/img16.jfif',
         isBig: false
     }, {
-        img: '/assets/img17.jfif',
+        img: './assets/img17.jfif',
         isBig: false
     }, {
-        img: '/assets/img18.jfif',
+        img: './assets/img18.jfif',
         isBig: true
     }, {
-        img: '/assets/img19.jfif',
+        img: './assets/img19.jfif',
         isBig: false
     }]
     return (
