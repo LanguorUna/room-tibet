@@ -43,7 +43,7 @@ function PopularCard(props: ICardProps): ReactElement {
             </div>
             <div className="popular__card-rating absolute w-16 h-8 top-12 right-0 px-2 py-1
                                 bg-zinc-50/40 backdrop-blur-sm flex gap-1 justify-center items-center">
-                <img src="../assets/star.svg" alt="" className="shrink-0"/>
+                <img src="/assets/star.svg" alt="" className="shrink-0"/>
                 <span className="font-bold">
                     {ratingText}
                 </span>
@@ -62,7 +62,7 @@ function Popular() {
             'то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа ' +
             'Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur" и ' +
             'занялся его поисками в классической латинской литературе.',
-        img: '../assets/img7.jfif',
+        img: '/assets/img7.jfif',
     }, {
         rating: 4.5,
         price: 500,
@@ -71,7 +71,7 @@ function Popular() {
         description: 'Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий' +
             ' назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых ' +
             'странных слов в Lorem Ipsum, "consectetur" и занялся его поисками в классической латинской литературе.',
-        img: '../assets/img8.jfif',
+        img: '/assets/img8.jfif',
     }, {
         rating: 5.0,
         price: 230,
@@ -80,7 +80,7 @@ function Popular() {
         description: 'Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий ' +
             'назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых ' +
             'странных слов в Lorem Ipsum, "consectetur" и занялся его поисками в классической латинской литературе.',
-        img: '../assets/img9.jfif',
+        img: '/assets/img9.jfif',
     }]
 
     return (
